@@ -1,0 +1,60 @@
+.campus {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-content {
+    margin: 20px auto;
+  }
+  
+  h2 {
+    color: #00897b;
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-gallery-btn {
+    background-color: #00897b;
+    color: white;
+  }
+  
+  .view-gallery-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .less-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .less-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  

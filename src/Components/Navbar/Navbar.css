@@ -1,0 +1,156 @@
+/* General Navbar Styles */
+.navbar {
+  width: 100%;
+  background: #00897B;
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: background 0.5s ease, padding 0.5s ease;
+}
+
+.navbar.dark-nav {
+  background: #004D40;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.navbar-logo img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.navbar-logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-logo h6 {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar-menu li {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.navbar-menu button {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* Mobile styles */
+.navbar .hamburger-menu {
+
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  z-index: 1001;
+}
+
+.navbar .hamburger-icon {
+  width: 40px; /* Explicit width for hamburger icon */
+  height: 40px;
+  cursor: pointer;
+
+}
+
+.navbar .side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #004D40;
+  transition: left 0.3s ease;
+  padding: 20px;
+  z-index: 999;
+}
+
+.navbar .side-menu.open {
+  left: 0; /* Slide in when open */
+}
+
+.navbar .side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .side-menu ul li {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.navbar .side-menu ul li button {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Mobile Menu Button */
+@media (max-width: 840px) {
+  .hamburger-menu {
+    display: block; /* Show hamburger icon on mobile */
+    cursor: pointer;
+  }
+
+  /* Ensure the side menu shows on smaller screens */
+  .navbar-menu {
+    display: none; /* Hide default menu on mobile */
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #004D40;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding: 20px;
+  }
+
+  .side-menu.open {
+    left: 0; /* Show the menu when open */
+  }
+}
+
+@media (min-width: 841px) {
+  /* Ensure the side menu and hamburger icon are hidden on larger screens */
+  .side-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}

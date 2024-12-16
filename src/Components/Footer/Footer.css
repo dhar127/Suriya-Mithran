@@ -1,0 +1,42 @@
+.footer {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure equal spacing between elements */
+    border-top: 1px solid #797979;
+    padding: 15px 20px; /* Add horizontal padding for spacing */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px; /* Add spacing between wrapped items */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Adjust text size for better alignment */
+    flex: 1; /* Allow it to take up available space */
+}
+
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the list items */
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px; /* Adjust font size for better readability */
+}
+
+.footer a {
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center;
+}
+
+.footer img {
+    width: 20px; /* Increase size for better visibility */
+    height: 20px;
+    object-fit: contain;
+}
